@@ -59,7 +59,7 @@
         <h3>📋 سجل الحجوزات اليومي</h3>
         <input type="date" id="searchDate" onchange="renderReport()">
         <table>
-            <thead><tr><th>الحصة</th><th>المعلمة</th><th>التخصص</th></tr></thead>
+            <thead><tr><th>الحصة</th><th>المعلم</th><th>التخصص</th></tr></thead>
             <tbody id="reportTableBody"></tbody>
         </table>
         <button class="btn-action" style="margin-top:15px; background:var(--free-green);" onclick="window.print()">🖨️ طباعة</button>
@@ -68,12 +68,12 @@
 
 <div id="settings" class="content-section">
     <div class="data-card">
-        <h3>👩‍🏫 إدارة المعلمات</h3>
-        <input type="text" id="newTeacherName" placeholder="اسم المعلمة">
-        <button class="btn-action" onclick="addTeacher()">إضافة معلمة +</button>
+        <h3>👩‍🏫 الإعدادات </h3>
+        <input type="text" id="newTeacherName" placeholder="اسم المعلم">
+        <button class="btn-action" onclick="addTeacher()">إضافة المعلم +</button>
         <hr>
         <select id="deleteTeacherSelect"></select>
-        <button class="btn-danger" onclick="removeTeacher()">حذف المعلمة -</button>
+        <button class="btn-danger" onclick="removeTeacher()">حذف المعلم -</button>
     </div>
 </div>
 
@@ -113,7 +113,7 @@
     "خالد جمعه الغيلاني", "سعيد خميس السنيدي", "علي فايل السنيدي", 
     "عبدالله جمعه الغنبوصي", "وليد فايل الغنبوصي", "نواف سعد العريمي"
 ];
-    let subjects = [ " التربية الإسلامية", "العلوم", "الرياضيات", "الدراسات الاجتماعية", "الفيزياء", "الكيمياء", "الاحياء", "اللغة الانجليزية", "تقنية المعلومات", "مهارات الموسيقية", "مهارات الحياتية", "الأدارة",  "الفنون البصرية", "الرياضة البدنية ,"اللغة العربية",];
+    let subjects = [" التربية الإسلامية", "اللغة العربية", "العلوم", "الرياضيات", "الدراسات الاجتماعية", "الفيزياء", "الكيمياء", "الاحياء", "اللغة الانجليزية", "تقنية المعلومات", "مهارات الموسيقية", "مهارات الحياتية", "الإدارة",  "الفنون البصرية", "الرياضة البدنية"];
     let allBookings = [];
     let currentPeriod = null;
     const pNames = ["الأولى", "الثانية", "الثالثة", "الرابعة", "الخامسة", "السادسة", "السابعة", "الثامنة"];
@@ -213,5 +213,4 @@
     window.onload = fetchBookings;
 </script>
 </body>
-
 </html>
