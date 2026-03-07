@@ -47,7 +47,6 @@
     <a href="javascript:void(0)" onclick="closeNav()" style="font-size:35px;">×</a>
     <a href="#" onclick="showSection('booking')">📅 حجز الحصص</a>
     <a href="#" onclick="showSection('report')">📋 سجل الحجوزات اليومي</a>
-    <a href="#" onclick="showSection('settings')">⚙️ الإعدادات</a>
 </div>
 
 <div id="booking" class="content-section active-section">
@@ -66,15 +65,7 @@
     </div>
 </div>
 
-<div id="settings" class="content-section">
-    <div class="data-card">
-        <h3>👩‍🏫 الإعدادات </h3>
-        <input type="text" id="newTeacherName" placeholder="اسم المعلم">
-        <button class="btn-action" onclick="addTeacher()">إضافة المعلم +</button>
-        <hr>
-        <select id="deleteTeacherSelect"></select>
-        <button class="btn-danger" onclick="removeTeacher()">حذف المعلم -</button>
-    </div>
+
 </div>
 
 <div id="bookingModal" class="modal">
@@ -214,3 +205,4 @@
 </script>
 </body>
 </html>
+
